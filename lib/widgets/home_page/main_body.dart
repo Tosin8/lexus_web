@@ -62,6 +62,14 @@ class _Main_BodyState extends State<Main_Body> {
   }
 
   RightColumn() {
-    return Column();
+    return Column(
+      children: [
+      Row(
+        children: [
+        Image.asset('assets/icons/quick.png'), 
+        ], 
+      )
+      ]
+    );
   }
 }
