@@ -13,6 +13,7 @@ class _Main_BodyState extends State<Main_Body> {
   Widget build(BuildContext context) {
     return Container(
         child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         LeftColumn(),
         RightColumn(),
@@ -20,6 +21,7 @@ class _Main_BodyState extends State<Main_Body> {
     ));
   }
 
+  // ignore: non_constant_identifier_names
   LeftColumn() {
     return Column(
       children: [
@@ -37,7 +39,29 @@ class _Main_BodyState extends State<Main_Body> {
         Text('Nx 450H+ awd'.toUpperCase(),
             style: const TextStyle(
                 color: primaryColor, fontWeight: FontWeight.w500)),
+        const SizedBox(height: 6),
+        Text(
+          'Starting at \n 60,000'.toUpperCase(),
+          style:
+              const TextStyle(color: primaryColor, fontWeight: FontWeight.w300),
+        ),
+        const SizedBox(height: 30),
+        Container(
+            decoration: const BoxDecoration(color: Colors.black),
+            child: Text(
+              'Book a test drive'.toUpperCase(),
+              style: const TextStyle(
+                  color: primaryColor,
+                  fontSize: 12,
+                  fontWeight: FontWeight.normal),
+            )),
+        Text('Terms and conditions apply'.toUpperCase(),
+            style: const TextStyle(color: primaryColor, fontSize: 10)),
       ],
     );
+  }
+
+  RightColumn() {
+    return Column();
   }
 }
