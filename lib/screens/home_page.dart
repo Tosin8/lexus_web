@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/home_page/lower_app_bar.dart';
 import '../widgets/home_page/main_body.dart';
 import '../widgets/home_page/upper_app_bar.dart';
 
