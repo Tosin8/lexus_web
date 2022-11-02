@@ -34,9 +34,12 @@ flutter:
   uses-material-design: true
 
 assets:
- - icons/quick.png
- - icons/speedometer.png
- - icons/steering-wheel.png
+ - assets/icons/quick.png
+ - assets/icons/speedometer.png
+ - assets/icons/steering-wheel.png
+ - assets/images/landing_page/bkg.jpg
+ - assets/images/logo/official_logo.png
+
 
   
  
