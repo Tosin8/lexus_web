@@ -29,6 +29,8 @@ class _HomePageState extends State<HomePage> {
             Upper_Nav(),
             SizedBox(height: 30),
             Main_Body(),
+            SizedBox(height: 30),
+            Lower_Nav(),
           ],
         ),
       ),
