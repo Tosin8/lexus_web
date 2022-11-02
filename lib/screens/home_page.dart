@@ -8,15 +8,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Size size = MediaQuery.of(context).size;
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       height: size.height,
       width: size.width,
       decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/'))),
+        image: AssetImage('assets/images/landing_page/bkg.jpg'),
+        fit: BoxFit.cover,
+      )),
     );
   }
 }
