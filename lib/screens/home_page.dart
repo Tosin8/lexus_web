@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/home_page/main_body.dart';
 import '../widgets/home_page/upper_app_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,6 +27,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: const [
             Upper_Nav(),
+            SizedBox(height: 30),
+            Main_Body(),
           ],
         ),
       ),
