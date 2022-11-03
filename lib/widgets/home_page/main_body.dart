@@ -82,6 +82,17 @@ class _Main_BodyState extends State<Main_Body> {
               Text('6 Sec'),
               Text('0-60km', style: TextStyle(fontSize: 10)),
             ]),
+          ),
+          Row(
+            children: [
+              Image.asset('assets/icons/speedometer.png'),
+              Expanded(
+                child: Column(children: const [
+                  Text('275 kWH'),
+                  Text('FULL CHARGE', style: TextStyle(fontSize: 10)),
+                ]),
+              )
+            ],
           )
         ],
       )
